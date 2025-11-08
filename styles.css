@@ -1,368 +1,363 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* Poppins SemiBold */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"); /* Poppins SemiBold */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
 }
-
 
 /* Header */
 header {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 10px;
 }
-    /* Navbar */
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        gap: 20px;
-    }
 
-    /* Icono Creeper */
-    .MainIcon img{
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-    }
+/* Icono Creeper */
+.MainIcon img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
 
-    /* Icono darkmode */
-    nav .lightDark {
-        border: none;
-        background: none;
-        padding: 0;
-        box-shadow: none;
-        cursor: pointer;
-    }
-        nav .lightDark img{
-            width: 60px;
-            height: 60px;
-        }
-
-
-    /* Secciones */
-    nav .menu {
-        display: flex;
-        flex: 1;
-        gap: 0;
-    }
-        nav .menu a{
-            border: 1px solid #696969;
-            color: black;
-            text-decoration: none;
-            text-align: center;
-            background-color: #D3D3D3;
-            padding: 15px 20px;
-            font-family: 'Montserrat';
-            font-size: larger;
-            flex: 1;
-            white-space: nowrap;
-
-        }
-            nav .menu a:hover {
-                background-color: green;
-                color: white;
-
-            }
-
+nav {
+  /* Navbar */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  /* Icono darkmode */
+  /* Secciones */
+}
+nav .lightDark img {
+  width: 60px;
+  height: 60px;
+}
+nav .lightDark {
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+nav .menu {
+  display: flex;
+  flex: 1;
+  gap: 0;
+}
+nav .menu a {
+  border: 1px solid #696969;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  background-color: #D3D3D3;
+  padding: 15px 20px;
+  font-family: "Montserrat";
+  font-size: larger;
+  flex: 1;
+  white-space: nowrap;
+}
+nav .menu a:hover {
+  background-color: green;
+  color: white;
+}
 
 /* HeroImage */
 .hero {
-    margin: 0px;
-    padding: 0px;
-    display: block;
+  margin: 0px;
+  padding: 0px;
+  display: block;
 }
-    .heroImage {
-        width: 100%;
-        height: 100%;
-        
-    }
+.hero .heroImage {
+  width: 100%;
+  height: 100%;
+}
 
 /* Body */
-
 /* Cartas */
 .cartas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 5px #696969 solid;
-    padding: 0rem 1.4rem;
-    font-family: Poppins;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px #696969 solid;
+  padding: 0rem 1.4rem;
+  font-family: Poppins;
+  flex-wrap: wrap;
 }
 
-.ItemsSemana.carta{
-    display: flex;
-    flex-direction: row;
-    height: 16rem;
-    padding: 0px;
-    align-items:center;
-    justify-content: center;
+.ItemsSemana.carta {
+  display: flex;
+  flex-direction: row;
+  height: 16rem;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
 }
 
 .carta {
-    flex: 1;
-    border: 8px #696969 solid;
-    margin: 20px;
-    padding: 15px;
-    /* height: 100%;
-    width: 100%; */
+  flex: 1;
+  border: 8px #696969 solid;
+  margin: 20px;
+  padding: 15px;
+  /* height: 100%;
+  width: 100%; */
 }
 
 .botones {
-    border: 1.5px solid #1C4D73;
-    background: none;
-    border-radius: 3px;
-    color: #1C4D73;
-    font-family: Poppins;
-    padding: 5% 20%;
-    cursor: pointer;
+  border: 1.5px solid #1C4D73;
+  background: none;
+  border-radius: 3px;
+  color: #1C4D73;
+  font-family: Poppins;
+  padding: 5% 20%;
+  cursor: pointer;
 }
+
 .botones.leer {
-    font-size: 1.6em;
-    font-weight: 100;
-    padding: 2% 10%;
-
+  font-size: 1.6em;
+  font-weight: 100;
+  padding: 2% 10%;
 }
 
-    /* Carta Bioma */
-    .Bioma.carta{
-        padding: 0px;
-        height: 15rem;
-    }
-    .Bioma img{
-        width: 100%;
-        height: 6rem;
-    }
-    
-    .Bioma.carta .contenido{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-        .Bioma.carta .contenido > button{
-            font-size: 1.10rem;
-        }
+/* Carta Bioma */
+.Bioma.carta {
+  padding: 0px;
+  height: 15rem;
+}
 
+.Bioma img {
+  width: 100%;
+  height: 6rem;
+}
 
-    .contenido > h4 {
-        font-size: 1rem;
-    }
+.Bioma.carta .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
-    .contenido > p {
-        margin: 10px;
-        font-size: 0.5rem;
-    }
+.Bioma.carta .contenido > button {
+  font-size: 1.1rem;
+}
 
-    /* Slider */
-    .CartaSlider {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        color: #A9A9A9;
-    }
-        .CartaSlider h3 {
-            font-size: 32px;
-            margin: 0px;
-            margin-bottom: 10px;
+.contenido > h4 {
+  font-size: 1rem;
+}
 
-        }
-    .CartaSlider > div {
-        height: 100%;
-    }
+.contenido > p {
+  margin: 10px;
+  font-size: 0.5rem;
+}
 
-    .slider {
-        display: flex;
-        gap: 15px;
-        
-    }
-        .item {
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 130px;
-            height: 140px;
-            border: 2px solid #696969;
-            padding: 5px;
-            font-size: 10px;
-            color: #000000;
+/* Slider */
+.CartaSlider {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #A9A9A9;
+}
 
-        }
+.CartaSlider h3 {
+  font-size: 32px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
 
-        .item img {
-            width: 60px;
-            height: 60px;
-        }
-            .item img, h4, p, button {
-                margin: 1px;
-            }
+.CartaSlider > div {
+  height: 100%;
+}
 
-            .item > div > h4 {
-                font-size: 1.2em;
-            }
+.slider {
+  display: flex;
+  gap: 15px;
+}
 
-    .atras, .adelante {
-        border: none;
-        background: none;
-        margin: 0px 12px;
-        padding: 0px;
-        box-shadow: none;
-        cursor: pointer;
-    }
-        .atras > img, .adelante > img{
-            height: 1.6rem;
-        }
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 130px;
+  height: 140px;
+  border: 2px solid #696969;
+  padding: 5px;
+  font-size: 10px;
+  color: #000000;
+}
 
-    /* Eventos */
-    .Eventos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+.item img {
+  width: 60px;
+  height: 60px;
+}
 
-        height: 15rem;
-    }
-        .Eventos h2 {
-            border: 1px solid #696969;
-            padding: 10px;
-            margin-top: 0px;
-            margin-bottom: 0.9rem;
-            font-family: 'Montserrat';
-            font-size: 1.6rem;
-            color: #696969;
-        }
-        .Eventos iframe {
-            height: 8.5rem;
-            width: 23rem;
-            border: 2px solid #696969 !important;
-        }
+.item img, h4, p, button {
+  margin: 1px;
+}
 
-    /* Mecanica */
-    .Mecanica.carta{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+.item > div > h4 {
+  font-size: 1.2em;
+}
 
-        padding: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-        .Mecanica img {
-            width: 11rem;
-            height: 100%;
-            
-            padding: 0px;
-            margin: 0px;
-        }
-        .Mecanica .texto {
-            display: flex;
-            flex-direction: column;
-            width: 16.6rem;
-            height: 100%;
-            align-items: center;
-            
-        }
-            .Mecanica .texto > h2 {
-                text-align: center;
-                font-size: 1.3rem;
-                margin-bottom: 0px;
-            }
-            .Mecanica .texto > p {
-                text-align: center;
-                font-size: 0.8rem;
-                margin: 1.5rem 0px;
-            }
+.atras, .adelante {
+  border: none;
+  background: none;
+  margin: 0px 12px;
+  padding: 0px;
+  box-shadow: none;
+  cursor: pointer;
+}
 
+.atras > img, .adelante > img {
+  height: 1.6rem;
+}
+
+/* Eventos */
+.Eventos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 15rem;
+}
+
+.Eventos h2 {
+  border: 1px solid #696969;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0.9rem;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  color: #696969;
+}
+
+.Eventos iframe {
+  height: 8.5rem;
+  width: 23rem;
+  border: 2px solid #696969 !important;
+}
+
+/* Mecanica */
+.Mecanica.carta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Mecanica img {
+  width: 11rem;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Mecanica .texto {
+  display: flex;
+  flex-direction: column;
+  width: 16.6rem;
+  height: 100%;
+  align-items: center;
+}
+
+.Mecanica .texto > h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+}
+
+.Mecanica .texto > p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1.5rem 0px;
+}
 
 /* Unete a discord */
 .Unirse {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-
-    font-family: 'Press Start 2P';
-    color: white;
-    background-color: #8B4513;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Press Start 2P";
+  color: white;
+  background-color: #8B4513;
 }
-    .Unirse>h2 {
-        font-size: 30px;
-    }
-    .unete {
-        font-family: Poppins;
-        background-color: #16A34A;
-        border: none;
-        font-size: 25px;
-        font-weight: 600;
 
-        padding: 10px 50px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+.Unirse > h2 {
+  font-size: 30px;
+}
+
+.unete {
+  font-family: Poppins;
+  background-color: #16A34A;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* footer */
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    border-top: 8px solid #696969;
-
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  border-top: 8px solid #696969;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
 }
-    .icons ul {
-        display: flex;
-        list-style-type: none;
-        padding-left: 0;
-    }
-    .icons img {
-        width: 50px;
-        height: 50px;
-    }
+
+.icons ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
 
 /* Boton Arriba */
 .arriba {
-    display:inline-block;
-    border: none;
-    background: none;
-    padding: 0;
-    box-shadow: none;
-    cursor: pointer;
-
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    z-index: 9999;
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
 }
-    .arriba img {
-        width: 90px;
-    }
 
-    .icons, ul {
-        margin: 0px;
-        padding: 0px;
-        gap: 10px;
-    }
+.arriba img {
+  width: 90px;
+}
 
+.icons, ul {
+  margin: 0px;
+  padding: 0px;
+  gap: 10px;
+}/*# sourceMappingURL=styles.css.map */
