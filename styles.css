@@ -93,19 +93,30 @@ header {
 .cartas {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-bottom: 5px #696969 solid;
-    margin: 0px;
-    padding: 10px;
+    padding: 0rem 1.4rem;
     font-family: Poppins;
     flex-wrap: wrap;
 }
+
+.ItemsSemana.carta{
+    display: flex;
+    flex-direction: row;
+    height: 16rem;
+    padding: 0px;
+    align-items:center;
+    justify-content: center;
+}
+
 .carta {
     flex: 1;
     border: 8px #696969 solid;
     margin: 20px;
     padding: 15px;
-    width: 250px;
-    max-height: 250px;
+    /* height: 100%;
+    width: 100%; */
 }
 
 .botones {
@@ -115,27 +126,45 @@ header {
     color: #1C4D73;
     font-family: Poppins;
     padding: 5% 20%;
-    
+    cursor: pointer;
+}
+.botones.leer {
+    font-size: 1.6em;
+    font-weight: 100;
+    padding: 2% 10%;
+
 }
 
     /* Carta Bioma */
-    .Bioma {
-        padding: 0px !important;
-        width: 200px !important;
+    .Bioma.carta{
+        padding: 0px;
+        height: 15rem;
     }
     .Bioma img{
         width: 100%;
-        height: 100%;
+        height: 6rem;
     }
-    .Bioma .contenido{
+    
+    .Bioma.carta .contenido{
         display: flex;
-        padding: 10px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
+        .Bioma.carta .contenido > button{
+            font-size: 1.10rem;
+        }
 
+
+    .contenido > h4 {
+        font-size: 1rem;
+    }
+
+    .contenido > p {
+        margin: 10px;
+        font-size: 0.5rem;
+    }
 
     /* Slider */
     .CartaSlider {
@@ -144,23 +173,19 @@ header {
         text-align: center;
         color: #A9A9A9;
     }
-            .CartaSlider h3 {
-                font-size: 40px;
-                margin: 0px;
-                margin-bottom: 10px;
-            }
+        .CartaSlider h3 {
+            font-size: 32px;
+            margin: 0px;
+            margin-bottom: 10px;
 
-    .atras, .adelante {
-        border: none;
-        background: none;
-        margin: 0px 10px;
-        padding: 0px;
-        box-shadow: none;
-        cursor: pointer;
+        }
+    .CartaSlider > div {
+        height: 100%;
     }
+
     .slider {
         display: flex;
-        gap: 30px;
+        gap: 15px;
         
     }
         .item {
@@ -170,20 +195,38 @@ header {
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 180px;
-            height: 200px;
+            width: 130px;
+            height: 140px;
             border: 2px solid #696969;
-            padding: 10px;
+            padding: 5px;
+            font-size: 10px;
+            color: #000000;
+
         }
 
         .item img {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
         }
             .item img, h4, p, button {
                 margin: 1px;
             }
 
+            .item > div > h4 {
+                font-size: 1.2em;
+            }
+
+    .atras, .adelante {
+        border: none;
+        background: none;
+        margin: 0px 12px;
+        padding: 0px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+        .atras > img, .adelante > img{
+            height: 1.6rem;
+        }
 
     /* Eventos */
     .Eventos {
@@ -192,25 +235,60 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        height: 15rem;
     }
         .Eventos h2 {
             border: 1px solid #696969;
             padding: 10px;
+            margin-top: 0px;
+            margin-bottom: 0.9rem;
             font-family: 'Montserrat';
-            font-size: larger;
+            font-size: 1.6rem;
             color: #696969;
+        }
+        .Eventos iframe {
+            height: 8.5rem;
+            width: 23rem;
+            border: 2px solid #696969 !important;
         }
 
     /* Mecanica */
-    .Mecanica {
+    .Mecanica.carta{
         display: flex;
         flex-direction: row;
-        padding: 0%;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
         .Mecanica img {
-            width: 200px;
+            width: 11rem;
             height: 100%;
+            
+            padding: 0px;
+            margin: 0px;
         }
+        .Mecanica .texto {
+            display: flex;
+            flex-direction: column;
+            width: 16.6rem;
+            height: 100%;
+            align-items: center;
+            
+        }
+            .Mecanica .texto > h2 {
+                text-align: center;
+                font-size: 1.3rem;
+                margin-bottom: 0px;
+            }
+            .Mecanica .texto > p {
+                text-align: center;
+                font-size: 0.8rem;
+                margin: 1.5rem 0px;
+            }
 
 
 /* Unete a discord */
